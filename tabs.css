@@ -1,0 +1,41 @@
+.tab__radio {
+    position: absolute;
+    left: -100vh;
+    opacity: 0;
+}
+
+.tabs__scroller {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    /* height: 30px; */
+    margin-bottom: -10px;
+}
+
+/* .tab__label_active {
+    border-bottom: 2px solid black;
+} */
+
+.tab__radio:checked+label {
+    border-bottom: 2px solid black;
+}
+
+#atoms-tab:checked .tabs__content_complex {
+    display: block;
+}
+
+.tab__radio:checked~div.tabs__content.tabs__content_simple {
+    display: none;
+}
+
+/* #simple-tab:checked~.tabs__content_simple {
+    display: block;
+}
+
+#simple-tab:checked~.tabs__content_complex {
+    display: none;
+} */
+
+#simple-tab:checked~.tabs__scroller .tabs__content_simple {
+    display: none;
+}

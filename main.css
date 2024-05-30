@@ -1,0 +1,75 @@
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./accordion.css);
+@import url(./buttons.css);
+@import url(./card.css);
+@import url(./page.css);
+@import url(./container.css);
+@import url(./histogram.css);
+@import url(./skeleton.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(./tooltip.css);
+@import url(./modalNButton.css);
+@import url(./calendar.css);
+@import url(./componentPage.css);
+@import url(./avatar.css);
+@import url(./forms.css);
+@import url(./tabs.css);
+@import url(./burger.css);
+
+:root {
+    --blue: #4263eb;
+    --purple: #7048e8;
+    --highlight: #f784ad;
+    --black: #212429;
+    --gray-4: #495057;
+    --gray-3: #acb5bd;
+    --gray-2: #dde2e5;
+    --gray-1: #f8f9fa;
+    --error: #f03d3e;
+    --success: #374fc7;
+    --notificaiton: #d84910;
+}
+
+:root {
+    --font-family: "Inter", sans-serif;
+    --second-family: "Roboto", sans-serif;
+    --third-family: "Source Sans Pro", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.preview {
+    padding: 100px 0;
+    background: #e3e3e333;
+    font-size: 0;
+}
+
+.preview__button_loadMore {
+    border: 1px solid var(--gray-3);
+    border-radius: 8px;
+    font-size: 16px;
+    width: 182px;
+    margin: auto;
+    text-align: center;
+    /* height: 48px; */
+    padding: 1%;
+    margin-top: 5%;
+}
+
+* {
+    font-family: var(--font-family);
+}
+
+.svgIcon {
+    width: 24px;
+    height: 24px;
+    color: black;
+}
+
+.card__preview {
+    flex-grow: 1;
+    align-content: center;
+}

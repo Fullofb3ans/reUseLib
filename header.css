@@ -1,0 +1,12 @@
+.header {
+    padding: 10px 10px 10px 10px;
+}
+
+/* h1 */
+.header__title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 128%;
+    color: var(--black);
+}

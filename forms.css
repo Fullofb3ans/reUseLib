@@ -1,0 +1,309 @@
+.forms {
+    font-size: 16px;
+}
+
+.card__preview__checksTable {
+    flex-grow: 1;
+}
+
+.textInput {
+    border-radius: 8px;
+    fill: #fff;
+    border: 2px solid var(--gray-2);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--gray-2);
+    padding-left: 5px;
+
+    flex-grow: 1;
+    height: 100%;
+}
+
+.inputIcon {
+    position: absolute;
+    right: 0;
+    display: flex;
+    position: absolute;
+    right: 5px;
+}
+
+.error .textInput {
+    border: 2px solid red;
+}
+
+.inputIcon__success {
+    display: none;
+}
+
+.success~.inputIcon__success {
+    display: flex;
+}
+
+.success~.inputIcon__error {
+    display: none;
+}
+
+.error~.inputIcon__success {
+    display: none;
+}
+
+.error~.inputIcon__error {
+    display: flex;
+}
+
+.inputDiv:focus {
+    border: 2px solid var(--blue);
+    color: black;
+}
+
+.inputDiv:focus-visible {
+    outline: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.inputDiv {
+    display: flex;
+    position: relative;
+    width: 350px;
+    border-radius: 8px;
+    fill: #fff;
+    border: 2px solid var(--gray-2);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--gray-2);
+    height: 32px;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.textInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.textInput:focus {
+    color: black;
+    border: 2px solid var(--blue);
+}
+
+.textInputs {
+    padding-bottom: 20px;
+}
+
+.checkbox {
+    display: inline-flex;
+}
+
+.checkbox__native {
+    position: absolute;
+    left: -100vh;
+    opacity: 0;
+}
+
+.checkbox__state {
+    display: inline-flex;
+    gap: 12px;
+}
+
+.checkbox__native:disabled~.checkbox__state .checkbox__box {
+    background-color: var(--gray-2);
+}
+
+.checkbox__native:disabled~.checkbox__state .checkbox__box .checkbox__icon {
+    opacity: 0;
+}
+
+.checkbox__native:checked~.checkbox__state .checkbox__box {
+    background-color: var(--blue);
+}
+
+.checkbox__native:focus~.checkbox__state .checkbox__title {
+    text-decoration: underline;
+}
+
+.checkbox__box {
+    width: 24px;
+    height: 24px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-4);
+}
+
+.checkBoxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.radio {
+    display: inline-flex;
+}
+
+.radio__native {
+    position: absolute;
+    left: -100vh;
+    opacity: 0;
+}
+
+.radio__state {
+    display: inline-flex;
+    gap: 12px;
+}
+
+.radio__native:disabled~.radio__state .radio__box {
+    background-color: var(--gray-2);
+}
+
+.radio__native:disabled~.radio__state .radio__box .radio__icon {
+    opacity: 0;
+}
+
+.radio__native:checked~.radio__state .radio__box .radio__icon {
+    opacity: 1;
+}
+
+.radio__native:checked~.radio__state .radio__box {
+    border: 2px solid var(--blue);
+}
+
+.radio__native:focus~.radio__state .radio__title {
+    text-decoration: underline;
+}
+
+.radio__box {
+    border: 1px solid var(--gray-2);
+    border-radius: 14px;
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-4);
+}
+
+.radio__icon {
+    font-size: 0;
+    opacity: 0;
+}
+
+.radios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checksTable {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 42px;
+}
+
+.toogles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.toogle {
+    display: inline-flex;
+}
+
+.toogle__native {
+    position: absolute;
+    left: -100vh;
+    opacity: 0;
+}
+
+.toogle__state {
+    display: inline-flex;
+    gap: 12px;
+}
+
+.toogle__native:disabled~.toogle__state .toogle__box {
+    background-color: var(--gray-2);
+}
+
+.toogle__native:disabled~.toogle__state .toogle__box .toogle__icon {
+    opacity: 0.25;
+    color: var(--gray-3);
+}
+
+.toogle__native:checked~.toogle__state .toogle__box .toogle__icon {
+    opacity: 1;
+    color: white;
+}
+
+.toogle__native:checked~.toogle__state .toogle__box {
+    background-color: var(--blue);
+    justify-content: flex-end;
+}
+
+.toogle__native:focus~.toogle__state .toogle__title {
+    text-decoration: underline;
+}
+
+.toogle__box {
+    border: 1px solid var(--gray-2);
+    border-radius: 16px;
+    width: 52px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.toogle__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-4);
+}
+
+.toogle__icon {
+    font-size: 0;
+    opacity: 1;
+    color: var(--gray-2);
+    margin-left: 1px;
+}
+
+.preview__card__modal__textInput {
+    font-size: 11px;
+}
+
+.preview__card__modal__label__text {
+    color: grey;
+}

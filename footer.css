@@ -1,0 +1,23 @@
+.footer {
+    text-align: center;
+    padding: 5%;
+}
+
+.footer__title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 126%;
+    color: var(--black);
+}
+
+.footer__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--black);
+    margin: auto;
+    width: 50%;
+}

@@ -1,0 +1,93 @@
+.histogram__container {
+    padding-top: 2%;
+    border-radius: 8px;
+    fill: #fff;
+    stroke-width: 1px;
+    stroke: var(--gray-3);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.histogram {
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.histogram__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--black);
+}
+
+.histogram__href {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: right;
+    color: var(--blue);
+    flex: auto;
+}
+
+.histogram__total {
+    text-align: left;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--black);
+    padding-bottom: 20px;
+}
+
+.histogram__column_s {
+    width: 2%;
+    height: 22px;
+    background: var(--blue);
+}
+
+.histogram__column_m {
+    width: 2%;
+    height: 35px;
+    background: var(--blue);
+}
+
+.histogram__column_l {
+    width: 2%;
+    height: 50px;
+    background: var(--blue);
+}
+
+.histogram__columns_container {
+    display: flex;
+    /* align-self: end; */
+    gap: 3px;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    flex: auto;
+}
+
+.card__preview__histogram {
+    flex-grow: 1;
+    min-width: 200px;
+    align-content: center;
+}
+
+.preview__histogram {
+    margin-top: 15px;
+    text-align: -webkit-center;
+}
+
+@media screen and (min-width: 1280px) {
+    .histogram {
+        width: 250px;
+    }
+}

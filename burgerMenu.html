@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./burger.css" />
+	</head>
+
+	<body>
+		<button class="" id="burgerMenuOpen">Open</button>
+		<div class="burger-menu" id="burger-menu">
+			<button class="" id="burgerMenuClose">Close</button>
+		</div>
+	</body>
+	<script>
+		const menuOpen = document.querySelector('#burgerMenuOpen');
+		const menu = document.querySelector('#burger-menu');
+		const menuClose = document.querySelector('#burgerMenuClose');
+		if (menuOpen) {
+			menuOpen.addEventListener('click', function () {
+				if (menu) {
+					menu.setAttribute('data-open', '');
+				}
+			});
+		}
+		if (menuClose) {
+			menuClose.addEventListener('click', function () {
+				if (menu) {
+					menu.removeAttribute('data-open', '');
+				}
+			});
+		}
+	</script>
+</html>

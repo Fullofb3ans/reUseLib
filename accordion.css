@@ -1,0 +1,24 @@
+.accordion {
+    padding: 2%;
+    border: 1px solid #ACB5BD;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto auto 1% auto;
+}
+
+.accordion:last-child {
+    margin: auto;
+}
+
+details summary::marker {
+    content: '';
+}
+
+.accordion__summary {
+    position: relative;
+}
+
+.accordion__icon {
+    position: absolute;
+    right: 0;
+}

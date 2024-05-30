@@ -1,0 +1,53 @@
+.tooltip {
+    text-align: center;
+    position: relative;
+}
+
+.tooltip__bubble {
+    padding: 10px;
+    position: absolute;
+    border-radius: 10px;
+    width: 129px;
+    box-shadow: 0 2px 4px 0 rgba(33, 36, 41, 0.05);
+    background: var(--blue);
+    display: none;
+    bottom: 150%;
+    color: white;
+    right: 50%;
+    transform: translateX(+50%);
+    bottom: calc(100% + 15px);
+
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray-2);
+}
+
+.tooltip__bubble::before {
+    content: '';
+    border: 12px solid transparent;
+    border-top: 12px solid var(--blue);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip__trigger {
+    display: inline-block;
+}
+
+.tooltip__trigger:hover~.tooltip__bubble {
+    display: block;
+}
+
+.card__preview_tooltip {
+    margin: auto;
+    flex-grow: 1;
+    max-height: 25px;
+    align-content: center;
+    text-align: center;
+    position: relative;
+}
